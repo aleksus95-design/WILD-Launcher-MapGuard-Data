@@ -10,21 +10,21 @@
     "files":  [
                   {
                       "relativePath":  "Mods/mods.txt",
-                      "targetPath":  "SCUM/Binaries/Win64/ue4ss/Mods/mods.txt",
+                      "targetPath":  "SCUM/Binaries/Win64/Mods/mods.txt",
                       "size":  23,
                       "sha256":  "9B9F915E53B395547D57936FA5636FC17743BAEB789F400A603A9E00E1205D50",
                       "action":  "merge-mods-txt-ensure-line"
                   },
                   {
                       "relativePath":  "Mods/ScumWardenMapGuard/enabled.txt",
-                      "targetPath":  "SCUM/Binaries/Win64/ue4ss/Mods/ScumWardenMapGuard/enabled.txt",
+                      "targetPath":  "SCUM/Binaries/Win64/Mods/ScumWardenMapGuard/enabled.txt",
                       "size":  2,
                       "sha256":  "4355A46B19D348DC2F57C046F8EF63D4538EBB936000F3C9EE954A27460DD865",
                       "action":  "copy-overwrite-if-hash-diff"
                   },
                   {
                       "relativePath":  "Mods/ScumWardenMapGuard/scripts/main.lua",
-                      "targetPath":  "SCUM/Binaries/Win64/ue4ss/Mods/ScumWardenMapGuard/scripts/main.lua",
+                      "targetPath":  "SCUM/Binaries/Win64/Mods/ScumWardenMapGuard/scripts/main.lua",
                       "size":  22015,
                       "sha256":  "4BBF79900B53390D660BD3E002D33A1ECD76B21D376DCC0D991BE6688F637F4C",
                       "action":  "copy-overwrite-if-hash-diff"
@@ -38,14 +38,14 @@
                   },
                   {
                       "relativePath":  "UE4SS.dll",
-                      "targetPath":  "SCUM/Binaries/Win64/ue4ss/UE4SS.dll",
+                      "targetPath":  "SCUM/Binaries/Win64/UE4SS.dll",
                       "size":  16259072,
                       "sha256":  "DF9E6E9A2280972B1C28CE590700FEACC752B447204F8BAADEB95F5776957055",
                       "action":  "copy-overwrite-if-hash-diff"
                   },
                   {
                       "relativePath":  "UE4SS-settings.ini",
-                      "targetPath":  "SCUM/Binaries/Win64/ue4ss/UE4SS-settings.ini",
+                      "targetPath":  "SCUM/Binaries/Win64/UE4SS-settings.ini",
                       "size":  2482,
                       "sha256":  "0650C53F07DFE68261C200E63E87C56A851EBE5F6FE9EBC6515A53E853EBB20B",
                       "action":  "copy-overwrite-if-hash-diff"
@@ -59,9 +59,9 @@
                   }
               ],
     "postInstallChecks":  [
-                              "SCUM/Binaries/Win64/ue4ss/Mods/mods.txt contains: ScumWardenMapGuard : 1",
-                              "SCUM/Binaries/Win64/ue4ss/Mods/ScumWardenMapGuard/enabled.txt exists",
-                              "SCUM/Binaries/Win64/ue4ss/Mods/ScumWardenMapGuard/scripts/main.lua exists",
+                              "SCUM/Binaries/Win64/Mods/mods.txt contains: ScumWardenMapGuard : 1",
+                              "SCUM/Binaries/Win64/Mods/ScumWardenMapGuard/enabled.txt exists",
+                              "SCUM/Binaries/Win64/Mods/ScumWardenMapGuard/scripts/main.lua exists",
                               "SCUM/Binaries/Win64/ScumWarden/configs/map-guard.json exists",
                               "After game launch, UE4SS log contains: [ScumWardenMapGuard] loaded"
                           ]
