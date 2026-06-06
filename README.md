@@ -36,10 +36,11 @@ docs\PROMPT_FOR_GITHUB_LAUNCHER_DEV_RU.md
 payload\UPLOAD_TO_SCUM_BINARIES_WIN64\
 ```
 
-в клиентскую папку:
+в клиентскую папку. Для актуального WILD-лаунчера папка `Mods\...` из payload ставится в `ue4ss\Mods\...`:
 
 ```text
 SCUM\Binaries\Win64\
+SCUM\Binaries\Win64\ue4ss\Mods\
 ```
 
 Файл:
