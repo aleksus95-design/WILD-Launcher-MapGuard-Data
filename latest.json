@@ -1,0 +1,9 @@
+{
+  "name": "ScumWarden Client MapGuard",
+  "version": "20260606-v2",
+  "manifest": "manifests/scumwarden-client-mapguard-20260606-v2.json",
+  "archive": "SanyaWarden_Client_MapGuard_LauncherPayload_20260606_v2.zip",
+  "payload_root": "payload/UPLOAD_TO_SCUM_BINARIES_WIN64",
+  "checksum_file": "checksums/SHA256SUMS.txt",
+  "notes": "Prepared handoff payload for launcher-managed MapGuard data loading."
+}
