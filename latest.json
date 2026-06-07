@@ -1,9 +1,8 @@
 {
-  "name": "ScumWarden Client MapGuard",
-  "version": "20260606-v2",
-  "manifest": "manifests/scumwarden-client-mapguard-20260606-v2.json",
-  "archive": "SanyaWarden_Client_MapGuard_LauncherPayload_20260606_v2.zip",
-  "payload_root": "payload/UPLOAD_TO_SCUM_BINARIES_WIN64",
-  "checksum_file": "checksums/SHA256SUMS.txt",
-  "notes": "Prepared handoff payload for launcher-managed MapGuard data loading."
+    "name":  "WILD NativeMapGate Full Client",
+    "version":  "20260607-1130",
+    "manifest":  "manifests/wild-native-mapgate-fullclient-20260607-1130.json",
+    "payload_root":  "payload",
+    "source_archive_sha256":  "433e0cca3fa1ce37f03b0638e7a8a889847910f1cefac8363af5f65c17b28156",
+    "notes":  "Launcher-managed NativeMapGate client payload. Installs only payload/SCUM files and removes legacy MapGuard/MagniMap artifacts."
 }

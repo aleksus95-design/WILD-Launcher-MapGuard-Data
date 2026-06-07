@@ -1,0 +1,18 @@
+; Native item-gated SCUM map test.
+; BPModLoaderMod is disabled to stop the old static UI_Magnify picture.
+; NativeMapGate handles M/F10 via UE4SS and tries to open the vanilla HUD map only with the map item in hands.
+
+BPModLoaderMod : 0
+NativeMapGate  : 1
+
+MagniMapLive   : 0
+MagniMapZoom   : 0
+scum_allow_mods: 0
+
+CheatManagerEnablerMod : 0
+ConsoleCommandsMod     : 0
+ConsoleEnablerMod      : 0
+SplitScreenMod         : 0
+LineTraceMod           : 0
+BPML_GenericFunctions  : 0
+Keybinds               : 0

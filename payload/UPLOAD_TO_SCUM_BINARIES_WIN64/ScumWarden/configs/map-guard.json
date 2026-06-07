@@ -1,1 +1,0 @@
-{"Enabled":true,"RequiredItemIdsText":"Magnifying_Glass|Magnifying_Glass1","OpenMapWithItem":true,"BlockMapWithoutItem":true,"GuardPollMs":1500,"GuardPollWhenMapOpenMs":500,"ConfigReloadMs":10000,"HudLookupCacheMs":3000,"ToggleCooldownSeconds":0.45,"DebugLogs":true}

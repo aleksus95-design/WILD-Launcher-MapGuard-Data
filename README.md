@@ -1,65 +1,15 @@
-# SanyaWarden Client MapGuard handoff
+# WILD NativeMapGate Data
 
-Дата: 2026-06-06
+This repository is consumed by WILD_Launcher only. The launcher installs files from `payload/SCUM` into the player's SCUM client and uses `latest.json` plus the manifest to verify hashes and clean launcher-managed legacy files.
 
-## Что это
+Client install target examples:
 
-Это комплект для разработчика лаунчера, чтобы игрокам автоматически ставился клиентский `ScumWardenMapGuard`.
+- `SCUM/Binaries/Win64/UE4SS.dll`
+- `SCUM/Binaries/Win64/UE4SS-settings.ini`
+- `SCUM/Binaries/Win64/version.dll`
+- `SCUM/Binaries/Win64/Mods/mods.txt`
+- `SCUM/Binaries/Win64/Mods/NativeMapGate/Scripts/main.lua`
+- `SCUM/Binaries/Win64/Mods/shared/UEHelpers/UEHelpers.lua`
+- `SCUM/Content/Paks/~mods/SCUM_MagniMap_P.pak`
 
-Он нужен потому, что серверная настройка:
-
-```ini
-scum.AllowMapScreen=False
-```
-
-выключает карту глобально. Чтобы игрок с нужным предметом в руках всё равно мог открыть карту, клиент должен получить UE4SS + `ScumWardenMapGuard` через лаунчер.
-
-## Что скинуть разработчику лаунчера
-
-Скинь ему весь архив:
-
-```text
-SanyaWarden_Client_MapGuard_LauncherPayload_20260606_v2.zip
-```
-
-И отдельно текстовый prompt:
-
-```text
-docs\PROMPT_FOR_GITHUB_LAUNCHER_DEV_RU.md
-```
-
-## Главные правила
-
-Лаунчер должен распаковать содержимое:
-
-```text
-payload\UPLOAD_TO_SCUM_BINARIES_WIN64\
-```
-
-в клиентскую папку:
-
-```text
-SCUM\Binaries\Win64\
-```
-
-Файл:
-
-```text
-Mods\mods.txt
-```
-
-надо не перетирать полностью, а аккуратно добавить/обновить строку:
-
-```text
-ScumWardenMapGuard : 1
-```
-
-## Проверка
-
-После установки и запуска игры в UE4SS-логе клиента должна появиться строка:
-
-```text
-[ScumWardenMapGuard] loaded. Required item in hands: Magnifying_Glass, Magnifying_Glass1
-```
-
-Если строки нет, клиентский мод не загрузился.
+Do not put server plugins, docs, old handoff zips, or launcher metadata into the game folder. They stay out of `payload/SCUM`.
