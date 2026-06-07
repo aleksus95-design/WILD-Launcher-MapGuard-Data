@@ -6,6 +6,7 @@
     "installRoot":  "SCUM",
     "payloadRoot":  "payload",
     "activeUe4ssModsPath":  "SCUM/Binaries/Win64/Mods",
+    "modsTxtEnsureLine":  "NativeMapGate : 1",
     "managedRoots":  [
                          "SCUM/Binaries/Win64/Mods/NativeMapGate",
                          "SCUM/Binaries/Win64/Mods/shared/UEHelpers"
@@ -27,7 +28,7 @@
                       "targetPath":  "SCUM/Binaries/Win64/Mods/mods.txt",
                       "size":  506,
                       "sha256":  "7643931dceda1e86f4a0feff5686f9fa9cfa167c1c9600bc4e7ac493b3faacd0",
-                      "action":  "copy-overwrite-if-hash-diff"
+                      "action":  "merge-mods-txt-ensure-line"
                   },
                   {
                       "relativePath":  "SCUM/Binaries/Win64/Mods/NativeMapGate/Scripts/main.lua",
