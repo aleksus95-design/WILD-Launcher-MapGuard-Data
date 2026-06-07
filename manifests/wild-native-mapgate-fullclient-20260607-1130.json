@@ -19,7 +19,7 @@
                               "SCUM/Binaries/Win64/Mods/LogicMods",
                               "SCUM/Binaries/Win64/Mods/UI_Magnify",
                               "SCUM/Binaries/Win64/Mods/BPModLoaderMod",
-                              "SCUM/Binaries/Win64/ue4ss"
+                              "SCUM/Binaries/Win64/ue4ss/Mods/ScumWardenMapGuard"
                           ],
     "files":  [
                   {
