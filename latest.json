@@ -1,8 +1,8 @@
 {
     "name":  "WILD NativeMapGate Full Client",
-    "version":  "20260607-1130",
-    "manifest":  "manifests/wild-native-mapgate-fullclient-20260607-1130.json",
+    "version":  "20260607-1620",
+    "manifest":  "manifests/wild-native-mapgate-fullclient-20260607-1620.json",
     "payload_root":  "payload",
     "source_archive_sha256":  "433e0cca3fa1ce37f03b0638e7a8a889847910f1cefac8363af5f65c17b28156",
-    "notes":  "Launcher-managed NativeMapGate client payload. Installs only payload/SCUM files and removes legacy MapGuard/MagniMap artifacts."
+    "notes":  "Launcher-managed NativeMapGate client payload. Installs only payload/SCUM files, enables ScumWarden UE4SS loading with warden.ini, and uses NativeMapGate safe mode without map refresh hooks."
 }
